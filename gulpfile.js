@@ -66,6 +66,7 @@ let path = {
 			shop: source_folder + "/scss/" + shop + "/*.scss",
 			cart: source_folder + "/scss/" + cart + "/*.scss"
 		},
+		font: source_folder + "/css/font.css",
 		min: {
 			css: {
 				cart: source_folder + "/css/" + cart + "/*.min.css",
@@ -74,10 +75,7 @@ let path = {
 				shop: source_folder + "/js/" + shop + "*.min.js",
 				cart: source_folder + "/js/" + cart + "*.min.js"
 			}
-		},
-		/* css: {
-			cart: source_folder + "/css/" + cart + "/font.css",
-		} */
+		}
 	},
 	build: {
 		html: project_folder + "/",
@@ -200,8 +198,8 @@ function buildcopy() {
 		path.src.min.js.shop + "/*",
 		path.src.min.js.cart + "/*",
 		path.src.img.src.shop + "/**/*",
-		path.src.img.src.cart + "/**/*"
-/* 		path.src.css.cart, */
+		path.src.img.src.cart + "/**/*",
+		path.src.font
 		], { base: source_folder }) // Параметр "base" сохраняет структуру проекта при копировании
 	.pipe(dest(project_folder)) // Выгружаем в папку с финальной сборкой
 }
