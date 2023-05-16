@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?tjbtj');
-  src:  url('../fonts/icomoon.eot?tjbtj#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?tjbtj') format('truetype'),
-    url('../fonts/icomoon.woff?tjbtj') format('woff'),
-    url('../fonts/icomoon.svg?tjbtj#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?rk36ii');
+  src:  url('fonts/icomoon.eot?rk36ii#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?rk36ii') format('truetype'),
+    url('fonts/icomoon.woff?rk36ii') format('woff'),
+    url('fonts/icomoon.svg?rk36ii#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-viber:before {
+  content: "\e907";
+}
+.icon-telegram-1:before {
+  content: "\e908";
+}
+.icon-vk:before {
+  content: "\e909";
+}
+.icon-globe-solid:before {
+  content: "\e902";
+}
+.icon-circle-plus-solid:before {
+  content: "\e903";
+}
+.icon-circle-minus-solid:before {
+  content: "\e904";
+}
+.icon-trash-can-solid:before {
+  content: "\e905";
+}
+.icon-star-solid:before {
+  content: "\e906";
+}
 .icon-cart-shopping-solid:before {
   content: "\e900";
 }

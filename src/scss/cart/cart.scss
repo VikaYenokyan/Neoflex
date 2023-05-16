@@ -87,28 +87,171 @@ header{
 }
 
 .main{
-    min-height: px-to-rem(1371px);
+    min-height: px-to-rem(543px);
     display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
 	position: relative;
     padding-top: px-to-rem(28px);
-    flex-direction: column;
+    
 
-    &_block{
-        min-width: px-to-rem(1110px);
+    .cart_block{
+       /*  display: flex; */
+        /* min-width: px-to-rem(1110px); */
         
+
+
+        &_total{
+            background: #FFFFFF;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 30px;
+            width: px-to-rem(350px);
+            height: px-to-rem(120px);
+            margin-left: px-to-rem(127px);
+            margin-top: px-to-rem(35px);
+            padding-top: px-to-rem(22px);
+
+            &_info{
+                display: flex;
+                justify-content: space-between;
+                margin-left: px-to-rem(21px);
+                margin-right: px-to-rem(16px);
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 15px;
+                color: #000000;
+                margin-bottom: px-to-rem(18px);
+            }
+            &_btn{
+                background-color: #000000;
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+                border-radius: 20px;
+                height: px-to-rem(65px);
+               /*  padding-top: px-to-rem(55px); */
+                button{
+                    background-color: transparent;
+                    color:#FFFFFF;
+                    height: px-to-rem(65px);
+                    width: px-to-rem(350px);
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 17px;
+                    text-align: center;
+                    &:hover{
+                        color:#FFCE7F;
+                    }
+                }
+            }
+        }
     }
 
-    &_logo{
+    .cart_logo{
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 600;
         font-size: px-to-rem(20px);
-        color: #838383;
+        color: #1C1C27;
     }
 
-    .headphones{
+    .cart_items{
+        margin-top: px-to-rem(13px);
+        max-width: px-to-rem(633px);
+    }
+
+    .cart_item{
+        background: #FFFFFF;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 30px;
+        width: px-to-rem(633px);
+        height: px-to-rem(218px);
+        margin-right: px-to-rem(30px);
+        margin-bottom: px-to-rem(30px);
+        display: flex;
+        align-items: center;
+        
+
+        &_block {
+            .item_img {
+                margin-left: px-to-rem(18px);
+                /* margin-top: px-to-rem(18px); */
+                img{
+                    width: px-to-rem(146px);
+                }
+            }
+
+            .counter{
+                display: flex;
+                align-items: center;
+                margin-left: px-to-rem(25px);
+                &_btn_minus, &_btn_plus{
+                    font-size: px-to-rem(30px);
+                    border-radius: 100%;
+                    color:#FFCE7F;
+                    background-color: transparent;
+                }
+                &_btn_minus{
+                    margin-right: px-to-rem(23px);
+                    &:hover{
+                        color:#000000;
+                    }
+                }
+                &_btn_plus{
+                    margin-left: px-to-rem(23px);
+                    &:hover{
+                        color:#000000;
+                    }
+                }
+                &_item{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 17px;
+                    color: #000000;
+                }
+            }
+
+            &:first-child{
+                margin-right: px-to-rem(23px);
+            }
+            &:last-child{
+                margin-left: px-to-rem(215px);
+            }
+            .name{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 17px;
+                color: #1C1C27;
+            }
+
+            .price{
+                margin-top: px-to-rem(12px);
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 15px;
+                color: #AAAAAA;
+                &_black{
+                    color: #1C1C27;
+                }
+            }
+
+            .delete{
+                margin-left: px-to-rem(41px);
+                margin-bottom: px-to-rem(144px);
+                color:#000000;
+                &:hover{
+                    color: #DF6464;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        
+    }
+    /* .headphones{
         max-height: px-to-rem(888px);
         display: flex;
         max-width: px-to-rem(1110px);
@@ -140,7 +283,7 @@ header{
                 img{
                     width: px-to-rem(219px);
                 
-                   /*  height: px-to-rem(177px); */
+                   
                     &:nth-child(3){
                         height: px-to-rem(177px);
                     }
@@ -235,7 +378,7 @@ header{
                 height: px-to-rem(74px);
             }
         }
-    }
+    } */
 }
 
 .footer{
